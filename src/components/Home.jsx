@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+
+    const navigate = useNavigate();
+
     return ( 
         <div>
             <h2>Home</h2>
@@ -10,7 +15,7 @@ const Home = () => {
                         <label>Paciente</label>
                         <div className="d-flex" style={{gap: '10px'}}>
                             <input type="text" />
-                            <button>
+                            <button onClick={()=>navigate('/nuevo')}>
                                 <i className="bi bi-plus-circle"></i>
                                 Nuevo
                             </button>
@@ -29,7 +34,7 @@ const Home = () => {
                                 <ol>Enf Importantes: Lorem ipsum dolor sit amet consectetur.</ol>
                             </ul>
                             <div className="d-flex justify-content-between">
-                                <button>
+                                <button onClick={()=>navigate('/consulta-actual')}>
                                     Abrir consulta
                                     <i className="bi bi-arrow-up-right-circle-fill" 
                                         style={{marginRight: '0', marginLeft: '10px'}}

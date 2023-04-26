@@ -17,7 +17,7 @@ $colorBorde: #366576;
         border-radius: 20px;
         padding: 20px;
         overflow-y: scroll;
-        flex-grow: 1;
+        max-height: 540px;
 
         form{
 
@@ -26,7 +26,7 @@ $colorBorde: #366576;
                 display: block;
             }
 
-            input{
+            input, textarea{
                 border: 2px solid #ededed;
                 border-radius: 8px;
                 padding: 3px 5px;
@@ -51,6 +51,13 @@ $colorBorde: #366576;
                 }
             }
 
+            textarea{
+                width: 80%;
+                height: 100px;
+                min-height: 100px;
+                max-height: 150px;
+            }
+
             table{
                 width: 100%;
                 text-align: center;
@@ -61,6 +68,22 @@ $colorBorde: #366576;
                 tbody{
                     th{
                         font-weight: 400;
+                    }
+                }
+            }
+
+            ol{
+
+                button{
+                    font-size: 13px;
+                }
+
+                li{
+                    margin-bottom: 15px;
+
+                    span{
+                        display: block;
+                        font-size: 15px;
                     }
                 }
             }
