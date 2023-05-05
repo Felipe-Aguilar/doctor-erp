@@ -38,6 +38,10 @@ const SideBar = () => {
                     <i className="bi bi-calendar3"></i>
                     Citas
                 </NavLink>
+                <NavLink to={'/cobros'}>
+                    <i className="bi bi-wallet2"></i>
+                    Cobros
+                </NavLink>
             </div>
 
         </div>
