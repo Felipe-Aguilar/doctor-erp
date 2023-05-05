@@ -4,10 +4,14 @@ import App from './App.jsx'
 import './scss/index.scss'
 import { BrowserRouter } from 'react-router-dom';
 
+import { ProovedorLogin } from './context/LoginContext';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ProovedorLogin>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ProovedorLogin>
   </React.StrictMode>,
 )
