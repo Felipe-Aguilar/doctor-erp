@@ -1,20 +1,23 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
-import Home from './Home';
-import Nuevo from './Nuevo';
-import ConsultaActual from './ConsultaActual';
+import Sidebar from "./SideBar";
+import Home from "./Home";
+import Pacientes from "./Pacientes";
+import Consultas from "./Consultas";
+import NuevoPaciente from "./NuevoPaciente";
 
 const Vista = () => {
     return ( 
-        <div className="vista">
-            
-            <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='/nuevo' element={<Nuevo />}/>
-                <Route path='/consulta-actual' element={<ConsultaActual />}/>
-            </Routes>
+        <>
+            <Sidebar />
 
-        </div>
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/pacientes" element={<Pacientes />}/>
+                <Route path="/consultas" element={<Consultas />}/>
+                <Route path="/nuevo-paciente" element={<NuevoPaciente />}/>
+            </Routes>
+        </>
     );
 }
 

@@ -1,6 +1,6 @@
-const Nuevo = () => {
+const NuevoPaciente = () => {
     return ( 
-        <div>
+        <div className="vista">
             <h2>Nuevo Paciente</h2>
 
             <div className="cuerpo">
@@ -39,4 +39,4 @@ const Nuevo = () => {
     );
 }
 
-export default Nuevo;
+export default NuevoPaciente;

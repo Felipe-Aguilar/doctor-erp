@@ -1,6 +1,6 @@
-const ConsultaActual = () => {
+const Consultas = () => {
     return ( 
-        <div>
+        <div className="vista">
             <h2>Consulta Actual</h2>
 
             <div className="cuerpo">
@@ -113,4 +113,4 @@ const ConsultaActual = () => {
     );
 }
 
-export default ConsultaActual;
+export default Consultas;

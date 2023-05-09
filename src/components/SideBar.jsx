@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 import FotoPerfil from '../assets/Perfil.png';
 
-const SideBar = () => {
+const Sidebar = () => {
     return ( 
-        <div className="col-lg-3 sidebar">
+        <div className="col-lg-2 sidebar">
 
             <div className="encabezado">
                 <div>
@@ -48,4 +48,4 @@ const SideBar = () => {
     );
 }
 
-export default SideBar;
+export default Sidebar;
