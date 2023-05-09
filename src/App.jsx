@@ -9,13 +9,13 @@ const App = () => {
     <div className="aplication container-fluid vh-100">
       <div className="d-flex h-100" style={{gap: '20px'}}>
         
-        <Login />
+        {/* <Login /> */}
 
         {
 
         }
-        {/* <SideBar />
-        <Vista /> */}
+        <SideBar />
+        <Vista />
 
       </div>
     </div>
